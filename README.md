@@ -135,7 +135,7 @@ extension Connectivity: WCSessionDelegate {
 
 ### 4. Sending messages
 ```swift
-  public func send(mobieIds: [Int]) {
+  public func send(movieIds: [Int]) {
     guard WCSession.default.activationState == .activated else {
       return
     }
@@ -151,7 +151,7 @@ extension Connectivity: WCSessionDelegate {
     #endif
     
     let userInfo: [String: [Int]] = [
-      ConnectivityUserInfoKey.purchased.rawValue: mobieIds
+      ConnectivityUserInfoKey.purchased.rawValue: movieIds
     ]
     
     WCSession.default.transferUserInfo(userInfo)
