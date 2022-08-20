@@ -100,7 +100,7 @@ extension Connectivity: WCSessionDelegate {
     
   }
   
-  #if os(iOS) // those mmethods are part of the delegate on iOS
+  #if os(iOS) // those methods are part of the delegate on iOS
   func sessionDidBecomeInactive(_ session: WCSession) {
     
   }
