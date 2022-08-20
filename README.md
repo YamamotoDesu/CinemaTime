@@ -18,6 +18,8 @@ You do this by implementing the following methods in your session delegate:
 
 * sessionDidDeactivate(_:)
 
+
+> Figure 1 shows the sequence of events that happen when the user switches from one Apple Watch to another. When automatic switching is enabled, only one Apple Watch at a time actually communicates with the iOS app. The Watch app on each watch stays in the active state, but the iOS app moves to the inactive and deactivated states during a switch. 
 ![image](https://user-images.githubusercontent.com/47273077/185734477-73bdf43f-5d6e-4158-813d-def8a0c16fe2.png)
 
 
