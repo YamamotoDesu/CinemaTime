@@ -141,7 +141,7 @@ extension Connectivity: WCSessionDelegate {
     }
     
     #if os(watchOS)
-    guard WCSession.default.isComplicationEnabled else { // THe Apple Watch checks if the app is on the phone.
+    guard WCSession.default.isCompanionAppInstalled else { // THe Apple Watch checks if the app is on the phone.
       return
     }
     #else
