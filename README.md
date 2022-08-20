@@ -133,7 +133,7 @@ extension Connectivity: WCSessionDelegate {
   }
 ```
 
-### Sending messages
+### 4. Sending messages
 ```swift
   public func send(mobieIds: [Int]) {
     guard WCSession.default.activationState == .activated else {
@@ -157,3 +157,4 @@ extension Connectivity: WCSessionDelegate {
     WCSession.default.transferUserInfo(userInfo)
   }
  ```
+ 
