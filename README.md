@@ -23,6 +23,16 @@ You do this by implementing the following methods in your session delegate:
 ![image](https://user-images.githubusercontent.com/47273077/185734477-73bdf43f-5d6e-4158-813d-def8a0c16fe2.png)
 
 
+## Communicating with the Counterpart App
+> * Use the updateApplicationContext(_:) method to communicate recent state information to the counterpart. When the counterpart wakes, it can use this information to update its own state. For example, an iOS app that supports Background App Refresh can use part of its background execution time to update the corresponding Watch app. This method overwrites the previous data dictionary, so use this method when your app needs only the most recent data values.
+> * Use the sendMessage(_:replyHandler:errorHandler:) or sendMessageData(_:replyHandler:errorHandler:) method to transfer data to a reachable counterpart. These methods are intended for immediate communication between your iOS app and WatchKit extension. The isReachable property must currently be true for these methods to succeed.
+> * Use the transferUserInfo(_:) method to transfer a dictionary of data in the background. The dictionaries you send are queued for delivery to the counterpart and transfers continue when the current app is suspended or terminated.
+> * Use the transferFile(_:metadata:) method to transfer files in the background. Use this method in cases where you want to send more than a dictionary of values. For example, use this method to send images or file-based documents.
+
+In iOS, use the transferCurrentComplicationUserInfo(_:) method to send data related to your Watch app’s complication. Use of this method counts against your complication’s time budget.
+
+
+
 ## iPhone
 <table>
   <tr>
