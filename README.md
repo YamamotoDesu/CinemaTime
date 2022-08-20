@@ -79,4 +79,15 @@ final class Connectivity: NSObject {
     WCSession.default.activate()
   }
 }
+```
 
+### 2. Preparing for WCSessionDelegate
+```swift
+// The WCSessionDelegate protocol extends NSObjectProtocol. That means for Connectivity to be the delegate, it must inherit from NSObject.
+final class Connectivity: NSObject {
+  
+  static let shared = Connectivity()
+  
+  private override init() {
+    super.init()
+ ```
