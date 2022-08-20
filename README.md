@@ -158,3 +158,19 @@ extension Connectivity: WCSessionDelegate {
   }
  ```
  
+ ### 5. Receiving messages
+ 
+ ```swift
+ final class Connectivity: NSObject, ObservableObject {
+  @Published var puchaseIds: [Int] = []
+  
+  
+  func session(_ session: WCSession, didReceiveUserInfo userInfo: [String: Any] = [:]) {
+    let key = ConnectivityUserInfoKey.purchased.rawValue
+    guard let ids = userInfo[key] as? [Int] else {
+      return
+    }
+    
+    self.puchaseIds = ids
+  }
+```  
