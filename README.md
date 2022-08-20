@@ -10,6 +10,16 @@
 
 ![image](https://user-images.githubusercontent.com/47273077/185734344-672544d9-081a-4d74-8fac-80a97baf6741.png)
 
+## Supporting Communication with Multiple Apple Watches
+You do this by implementing the following methods in your session delegate:
+* session(_:activationDidCompleteWith:error:)
+
+* sessionDidBecomeInactive(_:)
+
+* sessionDidDeactivate(_:)
+
+![image](https://user-images.githubusercontent.com/47273077/185734477-73bdf43f-5d6e-4158-813d-def8a0c16fe2.png)
+
 
 ## iPhone
 <table>
