@@ -131,4 +131,29 @@ extension Connectivity: WCSessionDelegate {
     
     WCSession.default.activate()
   }
-  ```
+```
+
+### Sending messages
+```swift
+  public func send(mobieIds: [Int]) {
+    guard WCSession.default.activationState == .activated else {
+      return
+    }
+    
+    #if os(watchOS)
+    guard WCSession.default.isComplicationEnabled else { // THe Apple Watch checks if the app is on the phone.
+      return
+    }
+    #else
+    guard WCSession.default.isWatchAppInstalled else { // The iOS deveice checks if the app is on the Apple Watch.
+      return
+    }
+    #endif
+    
+    let userInfo: [String: [Int]] = [
+      ConnectivityUserInfoKey.purchased.rawValue: mobieIds
+    ]
+    
+    WCSession.default.transferUserInfo(userInfo)
+  }
+ ```
