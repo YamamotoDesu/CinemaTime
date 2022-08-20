@@ -3,7 +3,7 @@
 ![image](https://user-images.githubusercontent.com/47273077/185731905-1601335e-219b-448c-83b9-252140ac524e.png)
 
 
-## WatchConnectivity
+## [WatchConnectivity](https://developer.apple.com/documentation/watchconnectivity/wcsession)
 > ## WCSession
 > The object that initiates communication between a WatchKit extension and its companion iOS app.
 > Your iOS app and watchOS app must both create and configure an instance of this class at some point during their execution. When both session objects are active, the two processes can communicate immediately by sending messages back and forth. When only one session is active, the active session may still send updates and transfer files, but those transfers happen opportunistically in the background.
