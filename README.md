@@ -91,3 +91,27 @@ final class Connectivity: NSObject {
   private override init() {
     super.init()
  ```
+ 
+ ## 3. Impletementing WCSessionDelegate
+ ```swift
+ // MARK: - WCSessionDelegate
+extension Connectivity: WCSessionDelegate {
+  func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+    
+  }
+  
+  #if os(iOS) // those mmethods are part of the delegate on iOS
+  func sessionDidBecomeInactive(_ session: WCSession) {
+    
+  }
+  
+  func sessionDidDeactivate(_ session: WCSession) {
+    // If the person has more than one aplle watch, and they switch,
+    // reactivate their session on the new deveice.
+    WCSession.default.activate()
+    
+  }
+  #endif
+  
+}
+```
