@@ -115,3 +115,20 @@ extension Connectivity: WCSessionDelegate {
   
 }
 ```
+
+```swift
+  private override init() {
+    super.init()
+    
+    #if !os(watchOS)
+    guard WCSession.isSupported() else {
+      return
+    }
+    
+    #endif
+    
+    WCSession.default.delegate = self
+    
+    WCSession.default.activate()
+  }
+  ```
