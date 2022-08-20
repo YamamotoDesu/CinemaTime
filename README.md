@@ -67,6 +67,7 @@ final class Connectivity: NSObject {
   private override init() {
     super.init()
     
+    // You should only start a session if it is supported.
     #if !os(watchOS)
     guard WCSession.isSupported() else {
       return
@@ -74,8 +75,7 @@ final class Connectivity: NSObject {
     
     #endif
     
-    WCSession.default.delegate = self
-    
+    // When you initialize Connextivity, you tell the device to activate the session whitch lets yopu talk to a paired device.
     WCSession.default.activate()
   }
 }
