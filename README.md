@@ -57,3 +57,26 @@ You do this by implementing the following methods in your session delegate:
 </table>
 
 
+### 1. Setting up watch connectivity
+Connectivity
+```swift
+final class Connectivity: NSObject {
+  
+  static let shared = Connectivity()
+  
+  private override init() {
+    super.init()
+    
+    #if !os(watchOS)
+    guard WCSession.isSupported() else {
+      return
+    }
+    
+    #endif
+    
+    WCSession.default.delegate = self
+    
+    WCSession.default.activate()
+  }
+}
+
