@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7B02107A28B0B2DC00EBFBD4 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B02107928B0B2DC00EBFBD4 /* Connectivity.swift */; };
 		7B02107B28B0B2DC00EBFBD4 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B02107928B0B2DC00EBFBD4 /* Connectivity.swift */; };
+		7B02107D28B2125600EBFBD4 /* Delivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B02107C28B2125600EBFBD4 /* Delivery.swift */; };
+		7B02107E28B2125600EBFBD4 /* Delivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B02107C28B2125600EBFBD4 /* Delivery.swift */; };
 		D258D5DD2637297E00178F43 /* ConnectivityUserInfoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F435EB26350F3E00EBF172 /* ConnectivityUserInfoKey.swift */; };
 		D2B78A342634B545009E3B39 /* CinemaTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B78A332634B545009E3B39 /* CinemaTimeApp.swift */; };
 		D2B78A382634B548009E3B39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2B78A372634B548009E3B39 /* Assets.xcassets */; };
@@ -91,6 +93,7 @@
 
 /* Begin PBXFileReference section */
 		7B02107928B0B2DC00EBFBD4 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		7B02107C28B2125600EBFBD4 /* Delivery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delivery.swift; sourceTree = "<group>"; };
 		D2B78A302634B545009E3B39 /* CinemaTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemaTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B78A332634B545009E3B39 /* CinemaTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaTimeApp.swift; sourceTree = "<group>"; };
 		D2B78A372634B548009E3B39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -234,6 +237,7 @@
 				D2F435102634BE7200EBF172 /* PurchaseTicketView.swift */,
 				D2F435EB26350F3E00EBF172 /* ConnectivityUserInfoKey.swift */,
 				7B02107928B0B2DC00EBFBD4 /* Connectivity.swift */,
+				7B02107C28B2125600EBFBD4 /* Delivery.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -381,6 +385,7 @@
 				7B02107A28B0B2DC00EBFBD4 /* Connectivity.swift in Sources */,
 				D2F434EF2634BDA600EBF172 /* MovieRow.swift in Sources */,
 				D258D5DD2637297E00178F43 /* ConnectivityUserInfoKey.swift in Sources */,
+				7B02107D28B2125600EBFBD4 /* Delivery.swift in Sources */,
 				D2F434DF2634BCFE00EBF172 /* TicketOffice.swift in Sources */,
 				D2B78A6D2634B5AF009E3B39 /* QRCode.swift in Sources */,
 				D2F4350C2634BE5100EBF172 /* MovieInfoView.swift in Sources */,
@@ -404,6 +409,7 @@
 				7B02107B28B0B2DC00EBFBD4 /* Connectivity.swift in Sources */,
 				D2F4351E2634D6C600EBF172 /* PurchasedTicketsListView.swift in Sources */,
 				D2F4357E2634D7C000EBF172 /* PurchaseTicketView.swift in Sources */,
+				7B02107E28B2125600EBFBD4 /* Delivery.swift in Sources */,
 				D2B78A552634B549009E3B39 /* ComplicationController.swift in Sources */,
 				D2F4357C2634D7C000EBF172 /* MovieInfoView.swift in Sources */,
 			);
@@ -542,7 +548,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CinemaTime WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = BQUPLV7KWS;
+				DEVELOPMENT_TEAM = 9F7BXCAFA2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "CinemaTime WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -566,7 +572,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CinemaTime WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = BQUPLV7KWS;
+				DEVELOPMENT_TEAM = 9F7BXCAFA2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "CinemaTime WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -592,7 +598,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BQUPLV7KWS;
+				DEVELOPMENT_TEAM = 9F7BXCAFA2;
 				IBSC_MODULE = CinemaTime_WatchKit_Extension;
 				INFOPLIST_FILE = "CinemaTime WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.CinemaTime.watchkitapp;
@@ -612,7 +618,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BQUPLV7KWS;
+				DEVELOPMENT_TEAM = 9F7BXCAFA2;
 				IBSC_MODULE = CinemaTime_WatchKit_Extension;
 				INFOPLIST_FILE = "CinemaTime WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.CinemaTime.watchkitapp;
@@ -633,7 +639,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CinemaTime/Preview Content\"";
-				DEVELOPMENT_TEAM = BQUPLV7KWS;
+				DEVELOPMENT_TEAM = 9F7BXCAFA2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CinemaTime/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -656,7 +662,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CinemaTime/Preview Content\"";
-				DEVELOPMENT_TEAM = BQUPLV7KWS;
+				DEVELOPMENT_TEAM = 9F7BXCAFA2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CinemaTime/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
